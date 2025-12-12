@@ -1,0 +1,9 @@
+.container.mt-5 h1 {
+    color: #d69c0d;
+    font-weight: bold;
+}
+
+.container a {
+    color: white;
+    font-weight: bold;
+}
