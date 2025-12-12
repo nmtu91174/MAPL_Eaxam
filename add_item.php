@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <footer class="footer mt-auto py-3 bg-light fixed-bottom">
         <div class="container text-center">
-            <span class="text-muted">© <?php echo date("Y"); ?> V_Store - FPT Aptech PHPL-SET02</span>
+            <span class="text-muted">© <?php echo date("Y"); ?> V_Store - FPT Aptech MAPL</span>
         </div>
     </footer>
 </body>
