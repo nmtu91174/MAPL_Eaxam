@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "UPDATE item_sale SET item_code=?, item_name=?, quantity=?, expried_date=?, note=? WHERE id=?";
 
         if ($stmt = $conn->prepare($sql)) {
-            $stmt->bind_param("ssddsi", $item_code, $item_name, $quantity, $expried_date, $note, $id);
+            $stmt->bind_param("ssdssi", $item_code, $item_name, $quantity, $expried_date, $note, $id);
 
             if ($stmt->execute()) {
                 header("location: index.php");

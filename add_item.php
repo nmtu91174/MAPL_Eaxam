@@ -33,7 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO item_sale (item_code, item_name, quantity, expried_date, note) VALUES (?, ?, ?, ?, ?)";
 
         if ($stmt = $conn->prepare($sql)) {
-            $stmt->bind_param("ssdds", $item_code, $item_name, $quantity, $expried_date, $note);
+
+            $stmt->bind_param("ssdss", $item_code, $item_name, $quantity, $expried_date, $note);
 
             if ($stmt->execute()) {
                 header("location: index.php");
